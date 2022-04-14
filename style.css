@@ -1,0 +1,259 @@
+ /* 
+Step -1: Adding some external google fonts to have the variety of HTML Fonts
+1. Raleway
+2. Open Sans
+*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Zen+Antique&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300');
+
+
+.MyDiv{
+   text-align: center;
+
+}
+
+h1 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color:#2D3E50;
+    border-radius: 3px;
+    
+}
+
+h3{
+    text-align: center;
+}
+h2{
+    text-align: center;
+    font-size: 40px;
+    border-left: #00A4BD;
+}
+ th {
+     text-align: left;
+ }
+
+table {
+    margin: auto;
+}
+
+.resume{
+    background-color: blue;
+    color: rgb(20, 19, 19);
+    border: 0;
+    border-radius: 3px;
+    padding: 8px 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact{
+    background-color: blue;
+    color: black;
+    border: 0;
+    border-radius: 3px;
+    padding: 8px 16px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.about {
+    
+    text-align: center;
+    background-color: white;
+    background-position: center;
+
+}
+.aboutDiv{
+   
+    text-align: left;
+    grid-column: 1/3;
+    max-width: 600px;
+    min-width: 200px;
+    margin-left: 15px;
+    margin-right: auto;
+}
+.tbasic{
+
+    text-align: right;
+    box-shadow: burlywood;
+    border: blueviolet;
+   
+    grid-column: 2/3;
+    margin-right: 15px;
+    margin-left: auto;
+    margin-bottom: 30px;
+}
+
+.leftabout{
+    text-align: left;
+    margin: auto;
+}
+.basic{
+    
+  text-align: right ;
+ 
+  margin: auto;
+}
+
+
+.bttn{
+    grid-column: 2/3;
+    text-align: center;
+}
+ .datadiv {
+    
+    font-family: 'Avenir Next LT Pro';
+    font-weight: bold;
+    border: 5px outset #00A4BD;   
+    color: #2D3E50;
+    background-color: #EAF0F6;
+     text-align: center;
+    margin-bottom: 10px;
+    display:flex;
+    align-items: center;
+ }
+
+
+
+/*
+Step -2: Apply CSS box properties over here
+*/
+*{
+    box-sizing: border-box;
+}
+
+/*
+Step -3 : Apply the CSS properties by following top-down approach i.e. right from the HTML body
+*/
+body{
+    padding: 1em;
+    font-family: "Open Sans", sans-serif;
+}
+
+form{
+    /*Apply some space around our form and to add a border over there*/
+    margin-top: 3em;
+    padding: 2em;
+    border: 1px solid black;
+
+    /*Set the maximum width, so that it does not expand with the window, using the rest as the margin*/
+    max-width: 900px;
+    min-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+
+    /*Use a grid layout for items in the form: 2 column, with most of the width in the second*/
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 3fr;
+    /*It will add 20px of space between the rows/columns*/
+    grid-gap: 20px;
+}
+
+form label{
+    /*Using the better font for the labels to read it in an easy way*/
+    font-family: "Raleway", sans-serif;
+    font-size: 1.5em;
+}
+
+/*Styling the input controls and textarea so that they are full of width in their cells, 
+use a larger font-size, have a light-gray border, rounded corners */
+input, textarea{
+    width: 100%;
+    padding: 0.3em;
+    font-size: 1.5em;
+    border: 1px solid rgb(196, 199, 199);
+    border-radius: 0.25em;
+}
+
+/*When the input controls have the focus, change the border color to light blue*/
+input:focus,
+textarea:focus{
+    outline: 3px solid lightskyblue;
+}
+
+/*For the two "submit" input buttons, make them stand out a bit more*/
+input[type="submit"],
+input[type="reset"]
+ {
+    width: 160px;
+    background-color: lightskyblue;
+    color: white;
+}
+input [type="button"] {
+
+    width: 160px;
+    background-color: lightskyblue;
+    color: white;
+}
+.rsme{
+    width: 160px;
+    background-color: lightskyblue;
+    color: white;
+
+}
+
+.contct{
+    width: 160px;
+    background-color: lightskyblue;
+    color: white;
+
+}
+/*Apply the focus and the hover effect on the input buttons*/
+input[type="submit"]:hover,
+input[type="submit"]:focus,
+input[type="reset"]:hover,
+input[type="reset"]:focus,
+input[type="button"]:hover,
+input[type="button"]:focus{
+    background-color: darkorange;
+    outline: 2px dotted black;
+}
+
+/*For Textarea, stretch it from the start of the grid to the end.
+NOTE: The grid has 2 column structure*/
+textarea{
+    grid-column: 1/3;
+}
+
+/*Move the buttons to the right side of the right/second column*/
+
+.buttons{
+    grid-column: 2/3;
+    text-align: right;
+}
+
+
+.Edudiv{
+    text-align: center;
+    height: 280px;
+    background-color: #00A4BD;
+  
+
+}
+.Edu {
+text-align: center;
+
+}
+ .degree{
+     text-align: left;
+     margin-left: 10px;
+ }
+ .college {
+
+    text-align: left;
+    margin-left: 10px;
+ }
+  .Unidegree {
+      
+    text-align: left;
+    margin-left: 10px;
+  }
+
+  .info {
+      text-align: left;
+      margin-left: 10px;
+
+  }
