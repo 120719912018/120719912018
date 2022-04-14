@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=300, initial-scale=1.0">
+    <title>Khoshgadam Aliyeva</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="aliyeva.js"></script>
+    <script>
+        function myFunction() {
+          document.getElementById("myForm").submit();
+        }
+
+        function handleClick(myRadio) {
+         var currentValue = myRadio.value;
+         if(currentValue=="3"){
+             $("#hr1").show();
+         }else{
+             $("#hr1").hide();
+       }
+}
+        </script>
+</head>
+<body style="background-color:powderblue;">
+
+       <br> </br>
+   <div class="MyDiv">
+    <img src="khoshgadam2.jpeg" alt="Khoshgadam" width="300" height="300">
+   </div>
+     
+       <h1> Khoshgadam Aliyeva</h1>
+       <h3>Web devoloper, Software Engineer</h3>
+
+
+       <div class="bttn"> 
+           <a href="https://www.linkedin.com/in/khoshgadam-aliyeva-4864b81a5/" download="Resume CV" >
+        <input class="rsme" type="button" name="resume" value="Resume"  />
+            </a>
+        <input class="contct" type="button" name="contact" value="Contact" onClick="document.getElementById('middle').scrollIntoView();"/>
+    </div>
+
+   
+   
+    <br>
+    <br>
+   
+    <div class= "datadiv">    
+    
+    <br> </br>
+    <!-- About me caption-->
+    
+    <div class="aboutDiv" style="width: 600px;">
+       
+       <h2 class="leftabout">About Me and Academic Honesty </h2>
+       <p> I am able to handle multiple tasks on a daily basis.I use creative approach to problem solve.
+         I declare that my assessment is wholly my own work in accordance with Seneca Academic
+        Policy. No part of this assessment has been copied manually or electronically from any other
+        source (including web sites) except for the information supplied by the WEB222 instructors and /
+        or made available in this assessment for my use. I also declare that no part of this assignment
+        has been distributed to other students. </p>
+        <tr>
+            <td><b>Date:</b></td>
+            <td>May 10, 2022</td>
+        </tr>
+    
+    </div>
+
+    <!-- information -->
+
+      <div class="tbasic" style="width: 450px;" >  
+          <h2>Basic Information</h2>
+          <table>
+    <tr>
+        <th>Age:</th>
+        <td>30</td>
+    </tr>
+     <tr>
+        <th>Email:</th>
+        <td>kaliyeva@myseneca.ca</td>
+     </tr>
+       
+     <tr>
+        <th>Language:</th>
+        <td>English,Turkish,Azeri</td>
+     </tr>
+
+       <tr>
+        <th>Class Section:</th>
+        <td>WEB 222 NEE</td>
+       </tr>
+        
+       <tr>
+        <th>Student ID:</th>
+        <td>155103195</td>
+       </tr>
+       
+       <tr>
+        <th>Instructors:</th>
+        <td>Navreet Lehal</td>
+       </tr>
+ 
+</table>
+</div>
+
+</div>
+<br> 
+ 
+<br>
+
+
+<h1>Education </h1>
+<br> </br>
+
+
+<div class= "datadiv">    
+    
+    <br> </br>
+    <!-- About me caption-->
+    
+    <div class="Edudiv" style="width: 450px;">
+        <br>
+        
+        <p>2021-2022</p>
+       
+       <h2 class="Edu">Diplom </h2>
+      
+    </div>
+
+    <!-- information -->
+
+      <div class="Unidegree"  >  
+          <h2 class="degree">Diploma Program</h2>
+          <h3 class="college">Seneca College</h3>
+          <p class="info">Computer Programming</p>
+
+    </div>
+    </div>
+
+      <br>
+
+
+<div class= "datadiv">    
+    
+    <br> </br>
+    
+    <div class="Edudiv" style="width: 450px;">
+        <br>
+        <p>2015-2016</p>
+       
+       <h2 class="Edu">Master Degree </h2>
+      
+    </div>
+
+    <!-- information -->
+
+    <div class="Unidegree"  >  
+        <h2 class="degree">Master Degree</h2>
+        <h3 class="college">Azerbaijan State Economic University</h3>
+        <p class="info">Computer Science</p>
+  </div>
+</div>
+
+
+<div class= "datadiv">    
+    
+    <br> </br>
+    <!-- About me caption-->
+    
+    <div class="Edudiv" style="width: 450px;">
+        <br>
+        
+        <p>2009-2013</p>
+       
+       <h2 class="Edu">Bachelor's Degree </h2>
+      
+    </div>
+
+    <!-- information -->
+ 
+    <div class="Unidegree"  >  
+        <h2 class="degree">Bachelor's Degree</h2>
+        <h3 class="college">Azerbaijan Oil Academy</h3>
+        <p class="info">Information Texnoloji and Systems Engineer</p>
+  </div>
+</div>
+
+
+<h1 id="middle">Contact me </h1>
+   
+
+    <!-- POST because we'll allow uploading files (too big for URL) -->
+    <form id="myForm" name="feedback"  action="https://formspree.io/f/xgednzob" method="POST" >
+      
+
+      <label for="feedback-fullname">Fullname</label>
+      <input
+        id="feedback-fullname"
+        name="name"
+        autocomplete="name"
+        type="text"
+        tabindex="1"
+      />
+
+      
+      <label for="feedback-email">Email</label>
+      <input
+        id="feedback-email"
+        name="email"
+        autocomplete="email"
+        type="email"
+        tabindex="2"
+      />
+
+      <label for="feedback-address">Address</label>
+      <input
+        id="feedback-address"
+        name="address"
+        maxlength="25"
+        autocomplete="address"
+        type="text"
+        autofocus
+        tabindex="3"
+      />
+
+      <label for="feedback-city">City</label>
+      <input
+        list="feedback-city"
+        name="city"
+        maxlength="25"
+        autocomplete="city"
+        type="text"
+        autofocus
+        tabindex="4"
+      />
+      <datalist id="feedback-city">
+        <option value="Toronto" >
+        <option value="Ottawa" >
+        <option value="MontReal" >
+        <option value="Calgary" >
+        <option value="Edmonton" >
+        <option value="Vanchouver" >
+        <option value="Kingston" >
+        
+    </datalist>
+       
+      <label for="feedback-postal">Postal Code</label>
+      <input
+        id="feedback-postal"
+        name="postal"
+        maxlength="25"
+        autocomplete="postal"
+        type="text"
+        autofocus
+        tabindex="5"
+      />
+      <tr>
+        <td>
+          <input type="radio" id="question" name="qch" onclick="handleClick(this);" value="1">
+        <label for="question">Question</label>
+        <input type="radio" id="comments" name="qch" onclick="handleClick(this);" value="2">
+        <label for="comments">Comments</label>
+        <input type="radio" id="hiring" name="qch" onclick="handleClick(this);" value="3">
+        <label for="hiring">Hiring</label>
+      </td> <td></td></tr>
+          
+        <tr id="hr1" style="display:none" ><td><label>Hourly Rate: </label> </td><td><input type="text" id="hrrate"/></td></tr>
+          
+        <tr>
+          <td>
+            <label for="message">Message:</label>
+          </td>
+          <td> 
+          <textarea id="message" name="message" rows="5" cols="50" tabindex="10"></textarea>
+        </td>
+      </tr>
+
+
+      <div class="buttons">
+        <input type="submit" name="Submit" value="Submit" tabindex="11" onclick="myFunction()" />
+        <input type="reset" name="Reset" value="Reset" tabindex="12" />
+      </div>
+    </form>
+</body>
+</html>
